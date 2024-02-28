@@ -1,0 +1,24 @@
+MAZE: "mylevel", ' '
+FLAGS:hardfloor
+INIT_MAP: solidfill,' '
+GEOMETRY:center,center
+MAP
+-------------
+|...........|
+|...........|
+|...........|
+|...........|
+|...........|
+-------------
+ENDMAP
+REGION:(0,0,12,6),lit,"ordinary"
+
+$room_area = selection: fillrect(1,1,11,5)
+$object_location = rndcoord($room_area)
+
+# Two guaranteed random objects and some more
+OBJECT: random, $object_location
+OBJECT: random, $object_location
+[50%]: OBJECT: random, $object_location
+[50%]: OBJECT: random, $object_location
+[50%]: OBJECT: random, $object_location

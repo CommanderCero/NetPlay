@@ -1,0 +1,33 @@
+# Tests the agents creativity in handling boulders
+
+MAZE: "mylevel", ' '
+FLAGS:hardfloor
+INIT_MAP: solidfill,' '
+GEOMETRY:center,center
+MAP
+--------     --------
+|......|     |......|
+|......|#####|......|
+|......|     |......|
+--------     --------
+ENDMAP
+REGION:(1,1,6,3),lit,"ordinary"
+REGION:(14,1,19,3),lit,"ordinary"
+REGION:(27,1,32,3),lit,"ordinary"
+
+# Right door left room
+DOOR:open,(7,2)
+# Left door right room
+DOOR:open,(13,2)
+
+$left_room = selection: fillrect(1,1,6,3)
+$right_room = selection: fillrect(14,1,19,3)
+
+# Boulder in the middle of the corridor
+OBJECT: "boulder", (10,2)
+
+# Objects to remove the boulder
+OBJECT: "pick-axe", rndcoord($left_room)
+OBJECT: "dwarvish mattock", rndcoord($left_room)
+OBJECT: ('/', "teleportation"), rndcoord($right_room), name:"Wand of teleportation"
+OBJECT: ('/', "striking"), rndcoord($right_room), name:"Wand of striking"

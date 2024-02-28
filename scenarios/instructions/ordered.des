@@ -1,0 +1,24 @@
+# For ordered instruction - pickup both wands, then the scroll, finally use the scroll to identify the wands
+
+MAZE: "mylevel", ' '
+FLAGS:hardfloor
+INIT_MAP: solidfill,' '
+GEOMETRY:center,center
+MAP
+-------------
+|...........|
+|...........|
+|...........|
+|...........|
+|...........|
+-------------
+ENDMAP
+REGION:(0,0,12,6),lit,"ordinary"
+
+$room_area = selection: fillrect(1,1,11,5) 
+
+# Random wand symbol='/' for identifying
+OBJECT:'/',rndcoord($room_area)
+OBJECT:'/',rndcoord($room_area)
+# Identification scroll - Idk how to make it identified from the start, so I just name it
+OBJECT:"identify",rndcoord($room_area),name:"Scroll of identify"

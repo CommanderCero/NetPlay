@@ -1,0 +1,35 @@
+# For conditional instruction - Drink from a fountain on this level, if there is no fountain drink a potion.
+
+MAZE: "mylevel", ' '
+FLAGS:hardfloor
+INIT_MAP: solidfill,' '
+GEOMETRY:center,center
+MAP
+--------     --------
+|......|     |......|
+|......|#####|......|
+|......|     |......|
+--------     --------
+    #
+    #
+--------
+|......|
+|......|
+|......|
+--------
+ENDMAP
+REGION:(1,1,6,3),lit,"ordinary"
+REGION:(14,1,19,3),lit,"ordinary"
+REGION:(1,8,6,11),lit,"ordinary"
+
+# Bottom door top left room
+DOOR:closed,(4,4)
+# Right door top left room
+DOOR:closed,(7,2)
+# Top door bottom left room
+DOOR:closed,(4,7)
+# Left door top right room
+DOOR:closed,(13,2)
+
+$all_rooms = selection: fillrect(1,1,6,3) & fillrect(1,8,6,10) & fillrect(14,1,19,3)
+OBJECT: "full healing", rndcoord($all_rooms)

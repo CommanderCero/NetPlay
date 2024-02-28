@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Main",
+            "type": "python",
+            "python": "/opt/conda/bin/python",
+            "request": "launch",
+            "program": "main.py",
+            "args": ["run"],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Run File",
+            "type": "python",
+            "python": "/opt/conda/bin/python",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["run"],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+# For unordered instructions - Fulfill all your tasks in any order: drink from the fountain, open both doors, kill the grid bug
+
+MAZE: "mylevel", ' '
+FLAGS:hardfloor
+INIT_MAP: solidfill,' '
+GEOMETRY:center,center
+MAP
+-------------
+|...........|
+|...........|
+|...........|
+|...........|
+|...........|
+-------------
+ENDMAP
+REGION:(0,0,12,6),lit,"ordinary"
+
+$room_area = selection: fillrect(1,1,11,5) 
+
+DOOR:locked,(3,0)
+DOOR:closed,(8,6)
+FOUNTAIN:rndcoord($room_area)
+OBJECT:"lock pick",rndcoord($room_area)
+MONSTER:('x',"grid bug"),rndcoord($room_area)

@@ -1,0 +1,4 @@
+{
+    "python.analysis.typeCheckingMode": "off",
+    "debug.allowBreakpointsEverywhere": true
+}

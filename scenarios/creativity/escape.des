@@ -1,0 +1,27 @@
+MAZE: "mylevel", ' '
+INIT_MAP: solidfill,' '
+GEOMETRY:center,center
+MAP
+---------
+|...|...|
+|...|...|
+|...|...|
+---------
+ENDMAP
+REGION:(1,1,3,3),lit,"ordinary"
+REGION:(5,1,7,3),lit,"ordinary"
+
+$left_room = selection: fillrect(1,1,3,3)
+$right_room = selection: fillrect(5,1,7,3)
+
+# Right room
+OBJECT: ('/', "digging"), rndcoord($right_room), name:"Wand of digging"
+OBJECT: ('=', "polymorph control"), rndcoord($right_room), name:"Ring of polymorph control"
+OBJECT: ('/', "polymorph"), rndcoord($right_room), name:"Polymorph wand"
+OBJECT: ('/', "teleportation"), rndcoord($right_room), name:"Wand of teleportation"
+
+# Left room - Escape using polymorph
+OBJECT: ('/', "digging"), rndcoord($left_room), name:"Wand of digging"
+OBJECT: ('=', "polymorph control"), rndcoord($left_room), name:"Ring of polymorph control"
+OBJECT: ('/', "polymorph"), rndcoord($left_room), name:"Polymorph wand"
+OBJECT: ('/', "teleportation"), rndcoord($left_room), name:"Wand of teleportation"

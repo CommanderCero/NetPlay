@@ -1,0 +1,10 @@
+;stat;value;count;frequency
+0;experience_level;1;20;1.0
+1;experience_level;2;13;0.65
+2;experience_level;3;10;0.5
+3;experience_level;4;5;0.25
+4;level_number;1;20;1.0
+5;level_number;2;15;0.75
+6;level_number;3;7;0.35
+7;level_number;4;3;0.15
+8;level_number;5;1;0.05

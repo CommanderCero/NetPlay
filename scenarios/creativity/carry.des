@@ -1,0 +1,49 @@
+# Tests the agents creativity in carrying heavy objects
+# Since we can't restrict the spawn position, we use a general task description:
+# Drop a plate mail and a human corpse in the room containing the statue.
+
+MAZE: "mylevel", ' '
+FLAGS:hardfloor
+INIT_MAP: solidfill,' '
+GEOMETRY:center,center
+MAP
+--------     --------     --------
+|......|     |......|     |......|
+|......|#####|......|#####|......|
+|......|     |......|     |......|
+--------     --------     --------
+ENDMAP
+REGION:(1,1,6,3),lit,"ordinary"
+REGION:(14,1,19,3),lit,"ordinary"
+REGION:(27,1,32,3),lit,"ordinary"
+
+# Right door left room
+DOOR:closed,(7,2)
+# Left door middle room
+DOOR:closed,(13,2)
+# Right door middle room
+DOOR:closed,(20,2)
+# Left door right room
+DOOR:closed,(26,2)
+
+$left_room = selection: fillrect(1,1,6,3)
+$middle_room = selection: fillrect(14,1,19,3)
+$right_room = selection: fillrect(27,1,32,3)
+
+OBJECT:"statue",rndcoord($right_room)
+
+# Will the agent kill these monsters or hide from them?
+MONSTER:random,rndcoord($middle_room), hostile
+MONSTER:random,rndcoord($middle_room), hostile
+
+# Utility objects
+OBJECT: "bag of holding", rndcoord($left_room), blessed
+# Ring for gaining strength
+OBJECT: "gain strength", rndcoord($left_room), blessed
+# Teleportation wand
+OBJECT: ('/', "teleportation"), rndcoord($left_room), name:"Wand of teleportation"
+OBJECT: "cloak of invisibility", rndcoord($left_room)
+
+# The objects to carry
+OBJECT:"heavy iron ball", rndcoord($left_room)
+OBJECT:"plate mail",rndcoord($left_room)

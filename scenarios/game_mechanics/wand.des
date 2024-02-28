@@ -1,0 +1,21 @@
+MAZE: "mylevel", ' '
+FLAGS:hardfloor
+INIT_MAP: solidfill,' '
+GEOMETRY:center,center
+MAP
+-------------
+|...........|
+|...........|
+|...........|
+|...........|
+|...........|
+-------------
+ENDMAP
+REGION:(0,0,12,6),lit,"ordinary"
+
+$room_area = selection: fillrect(1,1,11,5) 
+
+# Random wand symbol='/'
+OBJECT:'/',rndcoord($room_area)
+# Random statue for target practice
+OBJECT:"statue",rndcoord($room_area)

@@ -1,0 +1,25 @@
+MAZE: "mylevel", ' '
+FLAGS:hardfloor
+INIT_MAP: solidfill,' '
+GEOMETRY:center,center
+MAP
+-------------
+|...........|
+|...........|
+|...........|
+|...........|
+|...........|
+-------------
+ENDMAP
+REGION:(0,0,12,6),lit,"ordinary"
+
+$room_area = selection: fillrect(1,1,11,5) 
+
+# A few objects to pickup
+OBJECT: random, rndcoord($room_area)
+OBJECT: random, rndcoord($room_area)
+OBJECT: random, rndcoord($room_area)
+OBJECT: random, rndcoord($room_area)
+
+# Bag of holding last so it is always on top of any stack
+OBJECT: "bag of holding", rndcoord($room_area)

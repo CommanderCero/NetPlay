@@ -1,0 +1,15 @@
+# Instruction - Buy an item
+
+LEVEL: "mylevel"
+
+ROOM: "ordinary", lit, random, random, random {
+    GOLD: 500, random
+}
+ROOMDOOR: false, open, random, random
+
+ROOM: "shop", lit, random, random, random {
+    OBJECT: "knife", random
+}
+ROOMDOOR: false, open, random, random
+
+RANDOM_CORRIDORS

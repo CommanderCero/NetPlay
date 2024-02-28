@@ -1,0 +1,16 @@
+psutil==5.9.1 # The version 5.9.7 doesn't work due to error "module 'psutil._psutil_posix' has no attribute 'getpagesize'"
+markupsafe==2.0.1 # Needed for gradio and newer version of this package dont work with gradio
+gym
+gymnasium
+nle
+nle_language_wrapper
+https://github.com/facebookresearch/minihack/archive/main.zip
+langchain==0.0.352
+langchain-experimental==0.0.47
+langchain-community==0.0.13
+openai==0.28.1
+gradio==3.42
+termcolor
+tiktoken
+jupyter
+seaborn
