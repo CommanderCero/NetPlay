@@ -65,11 +65,11 @@ if __name__ == "__main__":
         description='Runs the specified NetHack agent.'
     )
     parser.add_argument('agent', type=str, default="handcrafted", help="Choose which agent to run (handcrafted or llm).")
-    parser.add_argument('-task', type=str, default=None, help="The task that will be sent to the agent at the beginning of the run.")
+    parser.add_argument('-task', type=str, default=None, help="The task that will be passed to the agent at the beginning of the run.")
     parser.add_argument('-des_file', type=str, default=None, help="Specify an optional des-file.")
     parser.add_argument('-character', type=str, default="@", help="Specify which character the agent will spawn with. See https://nethackwiki.com/wiki/Options#role")
     parser.add_argument('-max_steps', type=int, default=-1, help="The maximum amount of steps until the run will be aborted. Default=-1 indicating no timelimit.")
-    parser.add_argument('-seed', type=int, help="Specify number of tokens the agents memory can hold. Only used for the llm agent.")
+    parser.add_argument('-seed', type=int, help="The random seed used for this run.")
     parser.add_argument('-log_folder', type=str, default="./runs", help="Folder for storing the run log. Note each run will create a new subfolder in the log folder.")
     parser.add_argument('-model', type=str, default="gpt-4-1106-preview", help="Choose the OpenAI language model to use. Only used for the llm agent.")
     parser.add_argument('-max_memory_tokens', type=int, default=500, help="Specify number of tokens the agents memory can hold. Only used for the llm agent.")

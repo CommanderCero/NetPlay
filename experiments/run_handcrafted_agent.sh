@@ -1,0 +1,1 @@
+python ./run_full_runs.py handcrafted -agent_name "handcrafted" -num_runs 1 --render
