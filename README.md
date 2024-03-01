@@ -16,6 +16,7 @@ Netplay requires the environment variable OPENAI_API_KEY to be set to a valid ke
 
 ## Interactive
 https://github.com/CommanderCero/NetPlay/assets/10519507/9198c08b-c799-47dd-8d2e-60f7c5350b62
+
 NetPlay can be run in interactive mode, where you can continually pass new tasks to the agent. Note that although possible, we do not support guiding the agent in real-time. Instead, you have to interrupt a task to provide feedback. 
 
 #### Run
