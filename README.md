@@ -15,7 +15,9 @@ Netplay requires the environment variable OPENAI_API_KEY to be set to a valid ke
 
 
 ## Interactive
-![](images/gui_example.png)
+<video width="320" height="240" controls>
+  <source src="media/gui_example.mp4" type="video/mp4">
+</video>
 
 ## Full Runs
 NetPlay can also play the game fully autonomously using the following command.

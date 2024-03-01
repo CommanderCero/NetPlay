@@ -95,9 +95,9 @@ if __name__ == "__main__":
     if args.interactive and not args.render:
         print("The flag --interactive was set, setting --render as well.")
         args.render = True
-    if args.interactive and args.max_timesteps != -1:
-        print("The flag --interactive was set, ignoring max_timesteps.")
-        args.max_timesteps = -1
+    if args.interactive and args.max_steps != -1:
+        print("The flag --interactive was set, ignoring max_steps.")
+        args.max_steps = -1
 
     # Setup logging
     log_folder = args.log_folder
