@@ -1,4 +1,7 @@
 # NetPlay - A LLM powered agent for NetHack
+https://github.com/CommanderCero/NetPlay/assets/10519507/b920116a-a288-4165-9c30-548a5ce0f1bc
+
+
 This repo contains the source code for NetPlay, the first LLM-powered
 zero-shot agent for the extremely challenging roguelike NetHack. 
 
