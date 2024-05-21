@@ -1,4 +1,7 @@
 # NetPlay - A LLM powered agent for NetHack
+https://github.com/CommanderCero/NetPlay/assets/10519507/b920116a-a288-4165-9c30-548a5ce0f1bc
+
+
 This repo contains the source code for NetPlay, the first LLM-powered
 zero-shot agent for the extremely challenging roguelike NetHack. 
 
@@ -59,4 +62,14 @@ Recordings of NetPlay, autoascend, and the handcrafted agent are available on [G
 The files [run_guided_agent.sh](experiments\run_guided_agent.sh), [run_unguided_agent.sh](experiments\run_guided_agent.sh), and [run_handcrafted_agent.sh](experiments\run_handcrafted_agent.sh) contain the command used to run the corresponding agent. This repo also contains a copy of autoascend, modified to record its playthroughs similar to ours. To get autoascend working, follow the instructions in its [README](autoascend\README.md). The [run_valkyrie.sh](autoascend\run_valkyrie.sh) contains the command we used to run autoascend.
 
 ## Citation
-COMING SOON
+```bibtex
+@misc{
+  jeurissen2024playing,
+  title={Playing NetHack with LLMs: Potential & Limitations as Zero-Shot Agents}, 
+  author={Dominik Jeurissen and Diego Perez-Liebana and Jeremy Gow and Duygu Cakmak and James Kwan},
+  year={2024},
+  eprint={2403.00690},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI}
+}
+```
