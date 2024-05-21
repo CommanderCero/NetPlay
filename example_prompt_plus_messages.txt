@@ -1,0 +1,197 @@
+system:
+Started a new game.
+system:
+Executing skill 'explore_level'.
+system:
+Found a new corridor with ID 1
+system:
+Found a new room with ID 2
+system:
+A newt appeared at (63,8).
+system:
+Interrupting skill to rethink because 'A newt appeared at (63,8).'.
+system:
+Executing skill 'explore_level'.
+system:
+You kill the newt!
+A newt corpse appeared at (63,8).
+system:
+Interrupting skill to rethink because 'A newt corpse appeared at (63,8).'.
+system:
+Executing skill 'explore_level'.
+system:
+There is a doorway here.
+
+Things that are here:
+a newt corpse
+a jade ring
+--More--
+A gold piece appeared at (59,4).
+system:
+Interrupting skill to rethink because 'A gold piece appeared at (59,4).'.
+system:
+Executing skill 'explore_level'.
+system:
+There is a doorway here.
+
+Things that are here:
+a newt corpse
+a jade ring
+--More--
+system:
+You swap places with Slasher.  Slasher eats a newt corpse.
+system:
+A jade ring appeared at (63,8).
+system:
+Interrupting skill to rethink because 'A jade ring appeared at (63,8).'.
+system:
+Executing skill 'explore_level'.
+system:
+There is a doorway here.  You see here a jade ring.
+system:
+You hear someone counting money.
+Found a new corridor with ID 3
+system:
+Found a new room with ID 4
+Found a new room with ID 5
+A scroll labeled ZELGO MER appeared at (41,5).
+system:
+Interrupting skill to rethink because 'A scroll labeled ZELGO MER appeared at (41,5).'.
+system:
+Executing skill 'explore_level'.
+system:
+A boulder appeared at (41,9).
+system:
+Interrupting skill to rethink because 'A boulder appeared at (41,9).'.
+system:
+Executing skill 'explore_level'.
+system:
+A lichen appeared at (44,15).
+system:
+Interrupting skill to rethink because 'A lichen appeared at (44,15).'.
+human:
+fight the lichen
+
+Context:
+You are an agent that is playing the rogue-like NetHack.
+You will be given tasks from the user which you have to fulfill.
+Do not act on your own, if you are done mark the given task as done.
+Always respond in first person.
+
+Agent Information:
+You are at position (43, 12).
+avoid_monster_flag is set to False: Skills will fight monsters if they are in the way.
+Game message ''.
+You haven't prayed yet.
+
+Rooms:
+You are in corridor 3 which contains:
+- boulder at (41,9) reachable in 4 steps
+
+room 4 reachable in 6 steps contains:
+- scroll labeled ZELGO MER at (41,5) reachable in 7 steps
+
+room 2 reachable in 17 steps contains:
+- gold piece at (59,4) reachable in 20 steps
+- jade ring at (63,8) reachable in 24 steps
+
+corridor 1 reachable in 25 steps contains:
+- jade ring at (63,8) reachable in 24 steps
+
+room 5 reachable in 2 steps contains:
+No objects or features
+
+room 0 reachable in 33 steps contains:
+- stairs up at (65,18) reachable in 34 steps
+
+Close Monsters:
+- lichen at (44,15) 3 steps south-east
+
+Distant Monsters:
+No monsters in the distance
+
+Exploration Status:
+corridor 3 can be further explored.
+boulder at (41, 9) blocks progress in corridor 3.
+room 2 can be further explored.
+room 5 can be further explored.
+
+Inventory:
+a: a +1 club (weapon in hand)
+b: a +2 sling (alternate weapon; not wielded)
+c: 17 uncursed flint stones (in quiver pouch)
+d: 28 uncursed rocks
+e: an uncursed +0 leather armor (being worn)
+
+Stats:
+HP: 16 / 16
+armor class: 8
+strength: 20
+dexterity: 10
+constitution: 18
+intelligence: 8
+wisdom: 9
+charisma: 8
+energy: 2 / 2
+depth: 1
+dungeon number: 0
+gold: 0
+level: 1
+exp: 1
+score: 4
+encumbrance: unencumbered
+hunger: not hungry
+alignment: Lawful
+conditions: None
+
+Task:
+fight the lichen
+
+Skills:
+- zap: Zap a wand in the given cardinal (n, e, s, w) or ordinal direction (ne, se, sw, nw) or target yourself using self. Params: (item_letter: string, direction: string)
+- pickup: Pickup things at your location or specify where you want to pickup an item. Params: (x: Optional[integer], y: Optional[integer])
+- up: Go up a staircase at your location or specify the position of the staircase you want to use. Params: (x: Optional[integer], y: Optional[integer])
+- down: Go down a staircase at your location or specify the position of the staircase you want to use. Params: (x: Optional[integer], y: Optional[integer])
+- loot: Loot a box on the floor. Params: (x: Optional[integer], y: Optional[integer])
+- offer: Offer a sacrifice to the gods. Params: (x: Optional[integer], y: Optional[integer])
+- drop: Drop an item. Params: (item_letter: Optional[string])
+- read: Read a scroll, spellbook, or something else. Params: (item_letter: Optional[string])
+- put_on: Put on an accessory. Params: (item_letter: Optional[string])
+- remove: Remove an accessory (ring, amulet, or blindfold). Params: (item_letter: Optional[string])
+- takeoff: Take off one piece of armor. Params: (item_letter: Optional[string])
+- wield: Wield a weapon. Params: (item_letter: Optional[string])
+- wear: Wear a piece of armor. Params: (item_letter: Optional[string])
+- apply: Apply (use) a tool. If used on a wand, that wand will be broken, releasing its magic in the process. Params: (item_letter: Optional[string])
+- eat: Eat something from your inventory or straight from the ground. Params: (item_letter: Optional[string])
+- drink: Drink something from your inventory or straight from the ground. Params: (item_letter: Optional[string])
+- tip: Tip out the content of a container. Params: (item_letter: Optional[string])
+- dip: Dip an object into something. . Params: (item_letter: Optional[string])
+- kick: Kick something. Params: (x: integer, y: integer)
+- rest: Rests n-moves while doing nothing or until something happens (default=5). Params: (count: Optional[integer])
+- cast: Opens your spellbook to cast a spell. Params: ()
+- pay: Pay your shopping bill. Params: ()
+- pray: Pray to the gods for help. Params: ()
+- look: Look at what is under you. Params: ()
+- set_avoid_monster_flag: If set to true skills will try to avoid monsters. Params: (value: bool)
+- melee_attack: Pursues and attacks a given target using melee attacks until it is dead. Params: (x: integer, y: integer)
+- explore_level: Explores the level to find new rooms, as well as hidden doors and corridors. Params: ()
+- move_to: Move to the specified position using pathfinding. Params: (x: integer, y: integer)
+- go_to: Moves to the specified room or corridor using the shortest path possible. Params: (room_id: integer)
+- press_key: Presses the given letter. For special keys only ESC, SPACE, and ENTER are supported. Params: (key: string)
+- type_text: Types the text by pressing the keys in order. Params: (text: string)
+- finish_task: Use this skill when the task has been fulfilled. DO NOT CONTINUE playing without an task. Params: ()
+
+Choose an skill from the given list of skills.
+Output your response in the following JSON format:
+{
+    "thoughts": {
+        "observations": "<Relevant observations from your last action. Pay close attention to what you set out to do and compare that to the games current state.>",
+        "reasoning": "<Plan ahead.>",
+        "speak": "<Summary of thoughts, to say to user>"
+    }
+    "skill": {
+        "name": "<The name of the skill>",
+        "<param1_name>": "<The value for this parameter>",
+        "<param2_name>": "<The value for this parameter>",
+    }
+}
