@@ -63,13 +63,14 @@ The files [run_guided_agent.sh](experiments\run_guided_agent.sh), [run_unguided_
 
 ## Citation
 ```bibtex
-@misc{
-  jeurissen2024playing,
-  title={Playing NetHack with LLMs: Potential & Limitations as Zero-Shot Agents}, 
-  author={Dominik Jeurissen and Diego Perez-Liebana and Jeremy Gow and Duygu Cakmak and James Kwan},
+@INPROCEEDINGS{jeurissen2024playing,
+  author={Jeurissen, Dominik and Perez-Liebana, Diego and Gow, Jeremy and Cakmak, Duygu and Kwan, James},
+  booktitle={2024 IEEE Conference on Games (CoG)}, 
+  title={Playing NetHack with LLMs: Potential \& Limitations as Zero-Shot Agents}, 
   year={2024},
-  eprint={2403.00690},
-  archivePrefix={arXiv},
-  primaryClass={cs.AI}
+  volume={},
+  number={},
+  pages={1-8},
+  doi={10.1109/CoG60054.2024.10645630}
 }
 ```
